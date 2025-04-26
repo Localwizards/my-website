@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+        <style>
+
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: black;
+                font-family: 'Inter';
+                color: white;
+                text-align: left;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-weight: 600;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            a {color:aquamarine;}
+            a:hover {color:cornflowerblue}
+
+            .profile_picture {
+                width: 200px;
+                height: 200px;
+            }
+
+            .profile_container {
+                display: flex;
+                align-items: center;        /* centers but vertical */
+                padding: 10px;              /* space around boxes */
+                gap: 20px;                  /* area between boxes */
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            .project_picture {
+                width: 320px;
+                height: 240px;
+                padding-top: 15px;
+            }
+
+            .project_container {
+                display: flex;
+                align-items: center;        /* centers but vertical */
+                gap: 20px;                  /* area between boxes */
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 40px;
+                max-width: 1000px;
+                margin: auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="profile_container">
+
+            <img src="./files/profile_picture.jpg" class="profile_picture">
+
+            <div>
+                <h1>
+                    Christian Campbell
+                </h1>
+                <h2>
+                    Duke University Earth and Ocean Sciences Graduate
+                </h2>
+                <p>
+                    Hollywood, FL 33021<br>
+                    christiancampbell2002@gmail.com <br>
+                    <br>
+                    <a href="https://www.linkedin.com/in/christian-campbell-423b60196/">LinkedIn</a><br>
+                    <a href="test.txt">CV</a><br>
+                    <a href="https://github.com/Localwizards">GitHub</a><br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+
+        
+        <div class="profile_container">
+            <h1>RESEARCH PROJECTS</h1>
+        </div>
+
+        <div class="project_container">
+            <div>
+                <h2>FLORIDA PANTHER SPECIES DISTRIBUTION</h2>
+                <p>
+                    I modeled Florida Panther distribution from 1981-2020 using public telemetry data provided by the U.S. Fish and Wildlife Service. 
+                    I used the adehabitatHR library in RStudio to create shapefiles of Florida Panther core and home ranges. This was accomplished by calculating 50% and 95% kernel density estimates, respectively.
+                    As well, 11 SRTM digital elevation models from the USGS Earth Explorer portal were merged into a single raster layer spanning south Florida. 
+                    Hillshading this merged raster layer, and overlaying the home and core range of Florida Panthers, resulted in the following map.
+
+                </p>
+            </div>
+
+            <div>
+                <a href="./files/fp_take2.png"><img src="./files/fp_take2.png" class="project_picture"></a>
+            </div>
+            
+            
+        </div>
+
+        <div class="project_container">
+            <div>
+                <h2>JBROWSE GENOME BROWSER</h2>
+                <p>
+                    We modeled nucleotide diversity data of northwest Atlantic bottlenose dolphins in a JBrowse Genome Browser. Nucleotide diversity is a measure of nucleotide differences between individuals across a window, in our case 5 kbp.
+                    Three populations were examined: inshore, coastal, and offshore. We know these populations are genetically differentiated (given differences in morphology and independent life cycles), but we don't know what genes are driving this. 
+                    11 candidate genes were examined based on hypoxia tolerance and deep diving capability. These genes were VIPR1, VIPR2, FOXP3, PFKFB4, DDIT4, CASP10, CASP8, CFLAR, MYH9, SLC9A3R1, and RAPGEFL1. 
+                    The genes intersecting regions of high nucleotide diversity were of particular interest since it informs us where mutations accumulate independent of other populations, potentially suggesting divergence.
+                    <br>
+                    <br>
+                    CLICK THE PHOTO TO SEE THE WEBSITE
+                </p>
+            </div>
+
+            <div>
+                <a href="https://storage.googleapis.com/schultz_lab/tursiops_browser/index.html"><img src="./files/jbrowse.png" class="project_picture"></a>
+            </div>
+
+        </div>
+          
+
+    </body>
+</html>
